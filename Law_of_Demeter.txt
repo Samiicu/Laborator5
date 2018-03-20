@@ -1,0 +1,34 @@
+/**
+ * Exemplu Legea lui Demeter.
+ */
+public class LawOfDemeter
+{
+  private Topping cheeseTopping; //atribut
+  
+
+  public void goodExamples(Pizza pizza) //metoda
+  {
+    Foo foo = new Foo();
+    
+    // (1) este in regula sa ne apelam metodele (clean code)
+
+    doSomething();
+    
+    // (2) este in regula sa asignam o valoare unui atribut apeland metoda existenta
+
+    int price = pizza.getPrice();
+    
+    // (3) este in regula sa apelam metode asupra oricarui obiect cream
+
+    cheeseTopping = new CheeseTopping(); // apel constructor
+    float weight = cheeseTopping.getWeightUsed(); // (2)
+    
+    // (4) este in regula sa apelam metode ale altor obiecte in mod direct
+    foo.doBar();
+  }
+  
+  private void doSomething()
+  {
+    // facem ceva ...
+  }
+}
