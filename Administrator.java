@@ -1,3 +1,4 @@
+
 public class Administrator {
 
   private Integer id;

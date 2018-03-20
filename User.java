@@ -1,5 +1,4 @@
-import java.util.Vector;
-
+import java.util.ArrayList;
 public class User {
 
   private String name;
@@ -20,7 +19,6 @@ public class User {
    * 
    * @element-type Command
    */
-  public Vector  myCommand;
     public Shop myShop;
 
   public void User() {

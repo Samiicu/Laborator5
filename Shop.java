@@ -1,5 +1,4 @@
-import java.util.Vector;
-
+import java.util.ArrayList;
 public class Shop {
 
   private ArrayList<Command> activeCommands;
@@ -8,7 +7,6 @@ public class Shop {
 
   private Integer id;
 
-    public Vector  myCommand;
     /**
    * 
    * @element-type User
